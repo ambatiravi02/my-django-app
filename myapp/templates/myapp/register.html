@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+    {% load static %}  
+      
+</head>  
+<body>  
+<h2>Registration Page!!</h2>
+<form method="POST" class="post-form" enctype="multipart/form-data">  
+    {% csrf_token %}  
+<label for="id_firstname">Enter first name:</label>  
+    <input type="text" name="firstname" required maxlength="50" id="id_firstname" /><br><br> 
+<label for="id_lastname">Enter last name:</label>
+    <input type="text" name="lastname" required maxlength="100" id="id_lastname" /><br><br>
+<label for="email">Enter email:</label>
+    <input type="text" name="email" required maxlength="100" id="id_email" /><br><br>
+<label for="file">File:</label>
+    <input type="file" id="id_file" name="file"><br><br>
+    <button type="submit" class="save btn btn-default">Save</button>  
+</body>  
+</html>  
